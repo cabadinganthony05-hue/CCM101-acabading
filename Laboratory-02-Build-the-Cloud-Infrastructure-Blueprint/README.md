@@ -39,3 +39,43 @@ This laboratory includes the following checkpoints:
 **Anthony Cabading**
 
 Bachelor of Science in Information Technology
+
+
+## Cloud Infrastructure Components
+
+- **Compute:** Provides processing power for applications and workloads.
+- **Storage:** Stores files, data, and other digital resources.
+- **Network:** Connects users, compute resources, and storage resources.
+- **Identity:** Manages access, authentication, and permissions.
+- **Internet Connection:** Provides connectivity between users and cloud resources.
+
+## Linux Commands Executed
+
+| Command | Purpose |
+|---|---|
+| `uname -a` | Displays system and kernel information. |
+| `lscpu` | Displays CPU and processor information. |
+| `free -h` | Displays memory usage. |
+| `df -h` | Displays disk space usage. |
+| `ip addr` | Displays network interface information. |
+| `ls` | Lists files and directories. |
+| `cd` | Changes the current directory. |
+| `mkdir` | Creates a new directory. |
+| `cat` | Displays the contents of a file. |
+| `git status` | Shows the current Git repository status. |
+| `git add` | Stages files for commit. |
+| `git commit` | Saves changes to the Git repository. |
+| `git push` | Uploads commits to GitHub. |
+
+## Skills Learned
+
+- Identifying major cloud infrastructure components.
+- Using Linux commands to investigate system resources.
+- Creating and formatting Markdown documentation.
+- Comparing services from AWS, Microsoft Azure, and Google Cloud.
+- Designing a simple cloud infrastructure diagram.
+- Managing files and projects using Git and GitHub.
+
+## Challenges Encountered
+
+One challenge I encountered was understanding how the different cloud infrastructure components work together. I also had to become more familiar with Linux commands and Markdown formatting. Organizing the required files and screenshots in the correct GitHub folders also required careful attention. By following the laboratory instructions step by step, I was able to complete the tasks and improve my understanding of cloud infrastructure.
