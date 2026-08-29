@@ -22,3 +22,15 @@ The activity focuses on researching cloud services, comparing cloud platforms, a
 6. Multi-Cloud Decision Matrix
 7. Continue the Linux Investigation
 8. Mission Reflection
+
+## Checkpoint 7 – Linux Investigation
+
+The Linux environment used for this investigation was Ubuntu 24.04.4 LTS. The system information was collected using standard Linux commands to identify the operating system, CPU, memory, and available disk space.
+
+### Commands Used
+
+```bash
+cat /etc/os-release
+lscpu
+free -h
+df -h
