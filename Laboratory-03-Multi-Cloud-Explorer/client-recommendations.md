@@ -82,3 +82,15 @@ AWS is a suitable platform for the global e-commerce company because it provides
 | Client B – University | Microsoft Azure | Strong Microsoft integration |
 | Client C – AI Research Company | GCP | Strong AI and machine learning capabilities |
 | Client D – Global E-Commerce Company | AWS | Scalability, availability, and global content delivery |
+
+
+## Checkpoint 6 – Multi-Cloud Decision Matrix
+
+| Business Requirement | Recommended Platform | Justification |
+|---|---|---|
+| Startup Company | AWS | AWS provides flexible and scalable services that allow a startup to begin with the resources it needs and increase them as the application grows. Its wide range of services also gives the company different options for building and hosting its application. |
+| Enterprise Organization | AWS | AWS is a strong choice for enterprise organizations because it provides a broad range of services for computing, storage, databases, networking, security, and analytics. Its large service portfolio can support different enterprise workloads and business requirements. |
+| Microsoft Environment | Microsoft Azure | Azure is the best fit for organizations that already depend on Microsoft technologies. Its integration with Windows Server, Microsoft 365, and Microsoft Entra ID can make cloud adoption easier for an existing Microsoft-based environment. |
+| AI / Machine Learning | Google Cloud Platform | GCP is recommended for AI and machine learning because it provides services and tools designed for developing, training, and deploying machine learning solutions. Its computing and data services can also support demanding AI workloads. |
+| Kubernetes Deployment | Google Cloud Platform | GCP is a suitable choice for Kubernetes deployments because Google Kubernetes Engine (GKE) provides a managed Kubernetes environment. It can simplify the deployment, management, and scaling of containerized applications. |
+| Global Web Application | AWS | AWS is suitable for a global web application because it provides scalable computing, load balancing, storage, and content delivery services. These services can help applications handle changing traffic and serve users in different geographic locations. |
