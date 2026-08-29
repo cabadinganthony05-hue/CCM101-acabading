@@ -34,3 +34,46 @@ cat /etc/os-release
 lscpu
 free -h
 df -h
+```
+
+
+### Linux System Information
+
+The Linux environment used for this investigation is Ubuntu 24.04.4 LTS. The following information was collected from the KillerCoda terminal:
+
+- **Operating System:** Ubuntu 24.04.4 LTS
+- **CPU:** Intel Xeon E312xx (Sandy Bridge), x86_64
+- **Memory:** 1.9 GiB
+- **Disk Space:** 19 GB total, with approximately 13 GB available
+
+### Cloud Migration
+
+If this Linux server were migrated to the cloud, it could be hosted using virtual machine services from AWS, Microsoft Azure, and Google Cloud Platform.
+
+- **AWS:** Amazon EC2 can host the Ubuntu Linux server as a virtual machine.
+- **Microsoft Azure:** Azure Virtual Machines can host the Ubuntu Linux server.
+- **Google Cloud Platform:** Google Compute Engine can host the Ubuntu Linux server.
+
+These services provide virtual machines where a Linux operating system such as Ubuntu can be deployed and managed in the cloud.
+
+### Terminal Evidence
+
+The following screenshots show the Linux commands and system information collected from the KillerCoda terminal.
+
+#### Operating System
+
+![Operating System](screenshots/checkpoint7-system-info.png)
+
+#### CPU Information
+
+![CPU Information 1](screenshots/checkpoint7-cpu1.1.png)
+
+![CPU Information 2](screenshots/checkpoint7-cpu1.2.png)
+
+#### Memory
+
+![Memory Information](screenshots/checkpoint7-memory.png)
+
+#### Disk Space
+
+![Disk Information](screenshots/checkpoint7-disk.png)
