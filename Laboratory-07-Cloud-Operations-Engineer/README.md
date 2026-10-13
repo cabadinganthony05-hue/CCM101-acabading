@@ -21,7 +21,7 @@ This laboratory simulates those responsibilities using Linux and Docker. The goa
 
 ## 3. Monitoring Commands Executed
 
-The following commands will be used during the laboratory:
+The following commands were used during the laboratory to inspect the host system, test the web server, and monitor the container.
 
 | Command | Purpose |
 |---|---|
@@ -30,20 +30,32 @@ The following commands will be used during the laboratory:
 | `df -h /` | Checks available root filesystem space |
 | `top` | Monitors running processes and CPU activity |
 | `docker ps` | Lists running containers |
-| `docker logs client-website` | Displays container application logs |
-| `docker stats` | Displays live container resource usage |
-| `curl` | Sends HTTP requests to the web server |
+| `docker run -d --name client-website -p 8080:80 nginx` | Deploys the Nginx container in the background |
+| `curl http://localhost:8080` | Sends an HTTP GET request to the web server |
+| `curl -I http://localhost:8080` | Checks the web server's HTTP response headers |
+| `curl http://localhost:8080/hidden-admin-page` | Tests a missing page and checks the HTTP 404 response |
+| `docker logs client-website` | Displays container logs |
+| `docker stats` | Monitors live container resource usage |
 
 ## 4. Evidence and Results
 
-Screenshots and actual command outputs will be collected during each checkpoint. Resource measurements and HTTP response results will be documented after the tests have been performed.
+The host system was checked using Linux monitoring commands to identify available memory and disk space. An Nginx web server was deployed in a Docker container named `client-website` and accessed through port 8080.
+
+HTTP requests were sent using `curl` to test the web server. Successful requests returned HTTP 200 responses, while a request to `/hidden-admin-page` returned HTTP 404 because the requested page was not found.
+
+The container logs were inspected using `docker logs client-website`, and resource usage was monitored using `docker stats`. The results and observations are documented in `system-baseline-report.md` and `container-observability.md`. Screenshots of the checkpoints are stored in the `screenshots/` folder.
 
 ## 5. Skills Learned
 
-This activity develops practical skills in Linux system administration, Docker container deployment, HTTP testing, log analysis, resource monitoring, Markdown documentation, and GitHub portfolio management.
+This activity developed practical skills in:
+
+- Linux system administration and resource monitoring.
+- Docker container deployment and management.
+- HTTP request testing using `curl`.
+- Application log inspection and error identification.
+- Container performance monitoring using `docker stats`.
+- Markdown documentation and GitHub portfolio management.
 
 ## 6. Conclusion
 
-System monitoring is an important part of maintaining reliable cloud infrastructure. By checking the host before deployment and examining logs and container metrics during testing, an engineer can gather evidence to investigate errors and evaluate resource consumption.
-
-The final assessment will be based on the actual command outputs, screenshots, and observations collected during the laboratory.
+This laboratory demonstrated the importance of monitoring host resources, testing web services, examining application logs, and tracking container performance. These practices help cloud operations engineers identify errors, investigate resource issues, and maintain reliable infrastructure. The commands and observations from this activity provide practical experience in Linux system administration and Docker observability.
