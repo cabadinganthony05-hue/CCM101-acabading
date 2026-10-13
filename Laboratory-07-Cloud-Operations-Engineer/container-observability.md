@@ -74,17 +74,28 @@ Application logs are important because they help engineers identify failed reque
 
 ## 5. Real-Time Container Metrics
 
-The `docker stats` command will be used to monitor the running Nginx container's resource consumption.
+The `docker stats` command was used to monitor the resource consumption of the running Nginx container named `client-website`.
 
-Command:
+Command used:
 
 ```bash
 docker stats
 ```
 
-The command displays real-time information, including CPU percentage, memory usage, memory limits, and network input/output.
+The following measurements were observed during the monitoring session:
 
-The actual CPU percentage, memory usage, and Network I/O measurements will be recorded after the command is executed and a screenshot is captured.
+| Metric | Actual Result |
+|---|---|
+| Container name | `client-website` |
+| CPU usage | 0.00% |
+| Memory usage | 2.738 MiB |
+| Memory limit | 1.859 GiB |
+| Memory percentage | 0.14% |
+| Network I/O | 3.3 kB received / 2.86 kB sent |
+| Block I/O | 0 B read / 12.3 kB written |
+| PIDs | 2 |
+
+At the time of observation, the container showed very low CPU and memory usage. The Network I/O values indicated a small amount of data received and sent during the monitoring period. These measurements represent the container's resource usage at the time the command was checked and may change as additional requests are processed.
 
 ## 6. Evidence and Screenshots
 
@@ -102,6 +113,7 @@ The following screenshots will be stored in the `screenshots/` folder of this la
 
 ## 7. Conclusion
 
-This activity demonstrated how Docker can be used to deploy a web server and how HTTP requests can be used to test its behavior. Examining application logs helped identify successful requests and a missing-page error, while Docker metrics provide additional information about the container's resource consumption.
+This activity demonstrated how Docker can be used to deploy a web server and how HTTP requests can be used to test its behavior. Examining application logs helped identify successful requests and a missing-page error, while Docker metrics provided information about the container's resource consumption.
 
 Combining application logs with resource metrics helps cloud operations engineers investigate errors, monitor performance, and maintain reliable services.
+
