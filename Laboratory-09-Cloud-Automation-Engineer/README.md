@@ -58,7 +58,8 @@ Documentation: [Reflection Report](reflection.md)
 
 ## Screenshot Evidence
 
-The following screenshots will be attached after completing the practical activities.
+The following screenshots document the successful execution
+of the backup script and the configured Cron schedule.
 
 ### Backup Script Execution
 
